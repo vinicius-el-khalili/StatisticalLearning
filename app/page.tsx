@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import Latex from 'react-latex-next'
 import 'katex/dist/katex.min.css'
 import { ReactNode } from 'react'
+import L from '@/components/L'
 
 export default function Home() {
 
@@ -93,21 +94,3 @@ return (
 </main>
 )
 }
-
-const L = ({children,c=false}:{
-  children:ReactNode,
-  c?:boolean
-}) => {
-  return (
-    <>
-    {!c?
-    <Latex>{`$`+children+`$`}</Latex>
-    :
-    <div style={{padding:".5rem", margin:".5rem", border:"1px solid lightgray", width:"fit-content"}}>
-    <Latex>{`$`+children+`$`}</Latex>
-    </div>
-    }
-    </>
-  );
-}
- 
