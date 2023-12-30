@@ -11,7 +11,7 @@ const L = ({children,c=false}:{
       <Latex>{`$\\displaystyle `+children+`$`}</Latex>
       :
       <div style={{padding:".5rem", margin:".5rem", border:"1px solid lightgray", width:"fit-content"}}>
-      <Latex>{`$`+children+`$`}</Latex>
+      <Latex>{`$\\displaystyle `+children+`$`}</Latex>
       </div>
       }
       </>
