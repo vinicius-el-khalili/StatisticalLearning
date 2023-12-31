@@ -6,7 +6,7 @@ const _ = () => {
     return (
     <main>
         <section>
-            <h1>Probability Theory</h1>
+            <h1>Rules of probability</h1>
             <h4>Definition</h4>
             Let <L>X,Y</L> be two random variables.
             <br />

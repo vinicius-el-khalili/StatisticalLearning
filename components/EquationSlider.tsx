@@ -31,8 +31,8 @@ const EquationSlider  = ({equations}:{
             <div style={{display: 'flex',gap:"1rem"}}>
             <div style={{fontSize:".8rem"}}></div> <L>{equations[index]}</L>
             </div>
-            <button onClick={previousEquation} style={index==0?{backgroundColor:"white"}:{}}>{`<`}</button>
-            <button onClick={nextEquation} style={index+1==equations.length?{backgroundColor:"white"}:{}}>{`>`}</button>
+            <button onClick={previousEquation} style={index==0?{}:{backgroundColor:"white"}}>{`<`}</button>
+            <button onClick={nextEquation} style={index+1==equations.length?{}:{backgroundColor:"white"}}>{`>`}</button>
         </div>
         
         </>
