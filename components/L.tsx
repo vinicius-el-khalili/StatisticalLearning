@@ -1,5 +1,7 @@
 import Latex from "react-latex-next";
 import { ReactNode } from "react";
+import 'katex/dist/katex.min.css'
+
 
 const L = ({children,c=false}:{
     children:ReactNode,
