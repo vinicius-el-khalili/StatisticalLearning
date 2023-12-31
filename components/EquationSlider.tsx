@@ -23,14 +23,13 @@ const EquationSlider  = ({equations}:{
         <div style={{
             display: 'grid',
             gridTemplateColumns:"1fr auto auto",
-            height:"3rem",
-            padding: "1rem",
-            margin:"1rem 0 1rem 0",
-            alignItems:"center"
+            boxShadow:"0 0 3px gray",
+            borderRadius:"6px",
+            minHeight:"3rem",
+            alignItems:"center",
+            padding:".5rem 1rem .5rem 1rem",
         }}>
-            <div style={{display: 'flex',gap:"1rem"}}>
-            <div style={{fontSize:".8rem"}}></div> <L>{equations[index]}</L>
-            </div>
+            <L>{equations[index]}</L>
             <button onClick={previousEquation} style={index==0?{}:{backgroundColor:"white"}}>{`<`}</button>
             <button onClick={nextEquation} style={index+1==equations.length?{}:{backgroundColor:"white"}}>{`>`}</button>
         </div>
