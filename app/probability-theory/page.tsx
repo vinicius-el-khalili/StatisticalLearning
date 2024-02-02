@@ -4,6 +4,7 @@ import L from "@/components/L";
 
 const _ = () => {
     return (
+
     <main>
         <section>
             <h1>Rules of probability</h1>
@@ -38,6 +39,7 @@ const _ = () => {
             
         </section>
     </main>
+    
     );
 }
  
